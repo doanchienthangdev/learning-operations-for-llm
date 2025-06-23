@@ -1,10 +1,10 @@
 # Learning with AI API
 
-## Nhóm 1: Tóm tắt và Cô đọng Kiến thức
+# Nhóm 1: Tóm tắt và Cô đọng Kiến thức
 
 Nhóm này tập trung vào việc rút gọn thông tin, chắt lọc những ý quan trọng nhất từ một nguồn nội dung lớn.
 
-### `zip()`: Tóm tắt kiến thức quan trọng nhất theo số câu cho trước
+## `zip()`: Tóm tắt kiến thức quan trọng nhất theo số câu cho trước
 
 ```python
 zip(n_sentences=5, context=answer, topic=””)
@@ -23,7 +23,7 @@ Chức năng của nó là tóm tắt những kiến thức quan trọng nhất 
     - `zip()`: Tóm tắt những kiến thức quan trọng nhất trong phần trả lời bằng 5 câu.
     - `zip(15, files, “Python List”)`: Tóm tắt những kiến thức quan trọng nhất trong files đính kèm bằng 15 câu về chủ đề “Python List”.
 
-### `core_ideas()`: Những ý tưởng cốt lõi
+## `core_ideas()`: Những ý tưởng cốt lõi
 
 ```python
 core_ideas(context=answer, quantity=3)
@@ -40,7 +40,7 @@ Hàm này khác với `zip()` (tóm tắt toàn bộ nội dung) và `core_conce
     - `core_ideas(context=files)`: Đọc file đính kèm và rút ra 3 luận điểm chính mà tác giả đưa ra.
     - `core_ideas(context=answer, quantity=5)`: Liệt kê 5 thông điệp cốt lõi từ câu trả lời dài của AI.
 
-### `core_concepts()`: Các khái niệm cốt lõi
+## `core_concepts()`: Các khái niệm cốt lõi
 
 ```python
 core_concepts(context=answer, quantity=5, explanation_style="brief", topic="")
@@ -65,7 +65,7 @@ Công cụ này cực kỳ hữu ích để xây dựng một bộ từ vựng c
     - `core_concepts(context=answer, quantity=8, explanation_style="detailed")`: Dựa vào câu trả lời trước của AI, liệt kê 8 khái niệm cốt lõi và giải thích chi tiết hơn về từng khái niệm.
     - `core_concepts(context=files, topic="phần phương pháp luận")`: Chỉ quét phần phương pháp luận trong file và rút ra các khái niệm chính được sử dụng trong phần đó.
 
-### `tutor_mode()`: Đóng vai gia sư, dạy kiến thức
+## `tutor_mode()`: Đóng vai gia sư, dạy kiến thức
 
 ```python
 tutor_mode(context, topic="", start_level="Understand", questions_per_level=3)
@@ -118,9 +118,9 @@ AI sẽ tuần tự đặt các câu hỏi từ cấp độ tư duy thấp đế
 - `tutor_mode(context=files, topic="Python List Comprehension", questions_per_level=2)`
     - Bắt đầu một buổi học về List Comprehension trong Python, và chỉ hỏi 2 câu ở mỗi cấp độ Bloom trước khi chuyển lên cấp độ cao hơn.
 
-## Nhóm 2: Diễn giải và Đơn giản hóa Kiến thức, khái niệm
+# Nhóm 2: Diễn giải và Đơn giản hóa Kiến thức, khái niệm
 
-### `feynman()`: Giải thích một chủ đề bằng ngôn ngữ đơn giản nhất có thể.
+## `feynman()`: Giải thích một chủ đề bằng ngôn ngữ đơn giản nhất có thể.
 
 ```python
 feynman(topic, context=answer, target_audience="học sinh lớp 5")
@@ -136,7 +136,7 @@ feynman(topic, context=answer, target_audience="học sinh lớp 5")
     - `feynman("API là gì?", files, "người bà của tôi")`: Yêu cầu AI giải thích khái niệm API từ nội dung trong file đính kèm bằng ngôn ngữ cực kỳ đơn giản để một người lớn tuổi, không dùng công nghệ có thể hiểu được.
     - `feynman("Blockchain")`: Giải thích khái niệm Blockchain như cho học sinh lớp 5.
 
-### `analogy()`: Tạo các phép so sánh, ẩn dụ để liên hệ kiến thức mới với kiến thức cũ
+## `analogy()`: Tạo các phép so sánh, ẩn dụ để liên hệ kiến thức mới với kiến thức cũ
 
 ```python
 analogy(topic, context=answer, quantity=3)
@@ -151,7 +151,7 @@ analogy(topic, context=answer, quantity=3)
 - **Ví dụ:**
     - `analogy("Machine Learning", "", 5)`: Tạo 5 phép so sánh/ẩn dụ để giải thích Machine Learning là gì.
 
-### `persona()`: Giải thích một chủ đề dưới góc nhìn của một nhân vật cụ thể
+## `persona()`: Giải thích một chủ đề dưới góc nhìn của một nhân vật cụ thể
 
 ```python
 persona(persona, topic, context=answer)
@@ -166,7 +166,7 @@ persona(persona, topic, context=answer)
 - **Ví dụ:**
     - `persona("Sherlock Holmes", "Phân tích dữ liệu trong file", files)`: Yêu cầu AI đóng vai Sherlock Holmes để phân tích và suy luận về dữ liệu trong file đính kèm.
 
-### `story()`: Lồng ghép kiến thức vào một câu chuyện để tăng sự hấp dẫn và dễ nhớ
+## `story()`: Lồng ghép kiến thức vào một câu chuyện để tăng sự hấp dẫn và dễ nhớ
 
 ```python
 story(topic, context=answer, genre="khoa học viễn tưởng")
@@ -181,7 +181,7 @@ story(topic, context=answer, genre="khoa học viễn tưởng")
 - **Ví dụ:**
     - `story("Sự hình thành của một thói quen tốt", "", "đời thường")`: Kể một câu chuyện đời thường để minh họa cho quá trình hình thành một thói quen tốt.
 
-### `mental_model()`: Mô tả mô hình tư duy cốt lõi đằng sau một khái niệm
+## `mental_model()`: Mô tả mô hình tư duy cốt lõi đằng sau một khái niệm
 
 ```python
 mental_model(topic, context=answer)
@@ -195,7 +195,7 @@ mental_model(topic, context=answer)
 - **Ví dụ:**
     - `mental_model("Git version control")`: Mô tả mô hình tư duy về các "snapshot", "branch", "commit" giúp hiểu sâu cách Git hoạt động.
 
-### `dejargonize()`: "Dịch" các thuật ngữ chuyên ngành sang ngôn ngữ đời thường
+## `dejargonize()`: "Dịch" các thuật ngữ chuyên ngành sang ngôn ngữ đời thường
 
 ```python
 dejargonize(context=answer, target_audience="a high school student")
@@ -209,7 +209,7 @@ dejargonize(context=answer, target_audience="a high school student")
 - **Ví dụ:**
     - `dejargonize(context=files, target_audience="an investor with no tech background")`: Yêu cầu AI đọc một tài liệu kỹ thuật trong file và giải thích nó bằng ngôn ngữ kinh doanh cho nhà đầu tư.
 
-### `explain_by_contrast()`: Giải thích một khái niệm bằng cách đối chiếu nó với một khái niệm khác
+## `explain_by_contrast()`: Giải thích một khái niệm bằng cách đối chiếu nó với một khái niệm khác
 
 ```python
 explain_by_contrast(topic, contrasting_topic, context="")
@@ -224,11 +224,11 @@ explain_by_contrast(topic, contrasting_topic, context="")
 - **Ví dụ:**
     - `explain_by_contrast(topic="Agile methodology", contrasting_topic="Waterfall methodology")`: Giải thích Agile bằng cách liên tục đối chiếu nó với mô hình Waterfall truyền thống.
 
-## Nhóm 3: Hệ thống hóa và Lập kế hoạch Học tập
+# Nhóm 3: Hệ thống hóa và Lập kế hoạch Học tập
 
 Nhóm này giúp người học có cái nhìn tổng quan, cấu trúc hóa thông tin và xây dựng một lộ trình học tập rõ ràng.
 
-### `mindmap()`: Tạo sơ đồ tư duy để hệ thống hóa thông tin
+## `mindmap()`: Tạo sơ đồ tư duy để hệ thống hóa thông tin
 
 ```python
 Mindmap(topic, context=answer, format="markdown")
@@ -243,7 +243,7 @@ Mindmap(topic, context=answer, format="markdown")
 - **Ví dụ:**
     - `mindmap("Các loại hình Marketing Online", files, "text tree")`: Tạo sơ đồ tư duy dạng cây về các loại hình Marketing Online dựa trên nội dung file.
 
-### `idea_development()`: Trực quan hoá quá trình phát triển ý tưởng
+## `idea_development()`: Trực quan hoá quá trình phát triển ý tưởng
 
 ```python
 idea_development(context=answer, format="text_tree", root_idea="")
@@ -264,7 +264,7 @@ Công cụ này rất hữu ích để phân tích cấu trúc logic của một
     - `idea_development(context=files)`: Phân tích file đính kèm và trình bày cấu trúc phát triển các ý tưởng chính dưới dạng cây thư mục.
     - `idea_development(context=answer, format="flow_chart")`: Vẽ sơ đồ luồng phát triển các lập luận trong câu trả lời trước đó của AI.
 
-### `decompose()`: Phân rã một vấn đề lớn thành các bước nhỏ hơn
+## `decompose()`: Phân rã một vấn đề lớn thành các bước nhỏ hơn
 
 ```python
 decompose(problem, context=answer)
@@ -278,7 +278,7 @@ decompose(problem, context=answer)
 - **Ví dụ:**
     - `decompose("Làm thế nào để xây dựng một kênh YouTube thành công?")`: Chia nhỏ mục tiêu "xây dựng kênh YouTube thành công" thành các bước hành động cụ thể.
 
-### `logical_structure()`: Phân tích cấu trúc logic và mạch lạc lập luận của một văn bản
+## `logical_structure()`: Phân tích cấu trúc logic và mạch lạc lập luận của một văn bản
 
 ```python
 logical_structure(context=answer, format="outline", detail_level="high_level")
@@ -302,7 +302,7 @@ Việc hiểu được cấu trúc logic này giúp bạn đọc hiểu một c�
     - `logical_structure(context=answer, format="framework_id")`: Sau khi nhận được một câu trả lời dài từ AI, hãy yêu cầu nó cho biết cấu trúc logic mà nó đã sử dụng để trả lời.
     - `logical_structure(context=files, detail_level="detailed")`: Tạo một dàn ý cực kỳ chi tiết về cấu trúc logic của tài liệu trong file, giúp cho việc phân tích sâu.
 
-### `learning_path()`: Tạo lộ trình học tập chi tiết cho một chủ đề
+## `learning_path()`: Tạo lộ trình học tập chi tiết cho một chủ đề
 
 ```python
 learning_path(topic, context=files, current_level="người mới bắt đầu", goal_level="thành thạo", resources="miễn phí")
@@ -319,7 +319,7 @@ learning_path(topic, context=files, current_level="người mới bắt đầu",
 - **Ví dụ:**
     - `learning_path("Học guitar", context=files, "chưa biết gì", "chơi được đệm hát cơ bản", "miễn phí")`: Tạo lộ trình tự học guitar đệm hát từ đầu với các tài nguyên miễn phí trên mạng bám theo nội dung của files đính kèm.
 
-### `concept_map()`: Tạo bản đồ khái niệm, tập trung vào mối quan hệ giữa các ý tưởng
+## `concept_map()`: Tạo bản đồ khái niệm, tập trung vào mối quan hệ giữa các ý tưởng
 
 ```python
 concept_map(topic, context=answer, format="mermaid")
@@ -334,7 +334,7 @@ concept_map(topic, context=answer, format="mermaid")
 - **Ví dụ:**
     - `concept_map(topic="Machine Learning", format="list")`: Có thể tạo ra kết quả như: "[Machine Learning] --(is a field of)--> [Artificial Intelligence]", "[Machine Learning] --(uses)--> [Algorithms]", "[Algorithms] --(are trained with)--> [Data]".
 
-### `design_syllabus()`: Thiết kế một đề cương chi tiết cho cả một môn học/khóa học
+## `design_syllabus()`: Thiết kế một đề cương chi tiết cho cả một môn học/khóa học
 
 ```python
 design_syllabus(course_title, duration="12 weeks", target_audience, learning_objectives=5)
@@ -349,11 +349,11 @@ design_syllabus(course_title, duration="12 weeks", target_audience, learning_obj
 - **Ví dụ:**
     - `design_syllabus(course_title="Introduction to Digital Marketing", duration="8 weeks", target_audience="Small business owners")`.
 
-## Nhóm 4: Kiểm tra và Củng cố Chủ động
+# Nhóm 4: Kiểm tra và Củng cố Chủ động
 
 Nhóm này thúc đẩy việc chủ động truy xuất kiến thức (active recall) và tự kiểm tra, những phương pháp đã được chứng minh là cực kỳ hiệu quả để ghi nhớ lâu dài.
 
-### `questions()`: Tạo các câu hỏi trắc nghiệm hoặc tự luận
+## `questions()`: Tạo các câu hỏi trắc nghiệm hoặc tự luận
 
 ```python
 questions(quantity=1, type=multiple_choice, difficulty=normal, context=answer, topic=””)
@@ -368,7 +368,7 @@ questions(quantity=1, type=multiple_choice, difficulty=normal, context=answer, t
     - `context`: Nguồn thông tin để tạo câu hỏi, có thể là `answer`, `files`, hoặc `""`. Nếu `context=answer`, thông tin sẽ từ chính câu trả lời. Nếu `context=files`, thông tin lấy từ files đính kèm. Nếu `context=prompt`, thông tin sẽ lấy từ chính nội dung prompt. Nếu `context=url`, thông tin sẽ lấy từ địa chỉ url trong prompt.
     - `topic`: Chủ đề cụ thể của câu hỏi. Mặc định là `""`
 
-### `flashcards()`: Tạo các thẻ học (flashcard) ảo với mặt trước và mặt sau
+## `flashcards()`: Tạo các thẻ học (flashcard) ảo với mặt trước và mặt sau
 
 ```python
  Flashcards(topic, context=answer, quantity=10)
@@ -383,7 +383,7 @@ questions(quantity=1, type=multiple_choice, difficulty=normal, context=answer, t
 - **Ví dụ:**
     - `Flashcards("Từ vựng IELTS band 8.0", files, 20)`: Tạo 20 flashcard (từ/định nghĩa) từ danh sách từ vựng trong file đính kèm.
 
-### `challenge_question()`: Đặt ra các câu hỏi thách đố, hóc búa để kiểm tra giới hạn kiến thức
+## `challenge_question()`: Đặt ra các câu hỏi thách đố, hóc búa để kiểm tra giới hạn kiến thức
 
 ```python
 challenge_questions(topic, quantity=1 context=answer, level="expert", type="paradox")
@@ -400,7 +400,7 @@ challenge_questions(topic, quantity=1 context=answer, level="expert", type="para
 - **Ví dụ:**
     - `challenge_question(topic="Time Travel", quantity=2, type="paradox")`: Đặt ra 2 câu hỏi liên quan đến nghịch lý ông nội (grandfather paradox) trong du hành thời gian.
 
-### `find_the_flaw()`: Yêu cầu người học tìm ra lỗi sai trong một nội dung cho trước
+## `find_the_flaw()`: Yêu cầu người học tìm ra lỗi sai trong một nội dung cho trước
 
 ```python
 find_the_flaw(context, flaw_type="logic")
@@ -414,11 +414,11 @@ find_the_flaw(context, flaw_type="logic")
 - **Ví dụ:**
     - `find_the_flaw(context="A Python function to calculate the average of a list", flaw_type="logic")`: AI có thể tạo ra một hàm tính trung bình nhưng lại chia sai cho số phần tử hoặc không xử lý trường hợp list rỗng.
 
-## Nhóm 5: Tư duy Phản biện và Phân tích Sâu
+# Nhóm 5: Tư duy Phản biện và Phân tích Sâu
 
 Nhóm này tập trung vào việc đào sâu suy nghĩ, thử thách các giả định và phân tích vấn đề từ nhiều góc độ khác nhau.
 
-### `deep_explain()`: Giải thích sâu về 1 chủ đề
+## `deep_explain()`: Giải thích sâu về 1 chủ đề
 
 ```python
 deep_explain(topic, aspects=["all"], level="intermediate", context=answer)
@@ -448,7 +448,7 @@ deep_explain(topic, aspects=["all"], level="intermediate", context=answer)
     - `deep_explain("Thuyết tương đối rộng", level="expert", aspects=["mechanism", "misconceptions"])`: Yêu cầu giải thích cơ chế của Thuyết tương đối rộng ở mức độ chuyên gia và làm rõ những hiểu lầm thường gặp.
     - `deep_explain("chiến lược kinh doanh được đề xuất", context=files, aspects=["pros_cons"])`: Phân tích sâu ưu và nhược điểm của chiến lược kinh doanh được mô tả trong file đính kèm.
 
-### `socratic_dialogue()`: Bắt đầu chuỗi hội thoại truy vấn để người học tự tìm ra câu trả lời
+## `socratic_dialogue()`: Bắt đầu chuỗi hội thoại truy vấn để người học tự tìm ra câu trả lời
 
 ```python
 socratic_dialogue(topic, user_statement, persona="Socrates")
@@ -463,7 +463,7 @@ socratic_dialogue(topic, user_statement, persona="Socrates")
 - **Ví dụ:**
     - `socratic_dialogue(topic="Nghệ thuật", user_statement="Nghệ thuật là cái đẹp.")`: AI sẽ bắt đầu bằng một câu hỏi như, "Vậy một bức tranh gây khó chịu nhưng lại khiến người xem suy ngẫm sâu sắc thì có được coi là nghệ thuật không?" và tiếp tục dựa trên câu trả lời của bạn.
 
-### `first_principles()`: Phân tích một chủ đề về những nguyên tắc cơ bản nhất
+## `first_principles()`: Phân tích một chủ đề về những nguyên tắc cơ bản nhất
 
 ```python
 first_principles(topic, context=answer)
@@ -477,7 +477,7 @@ first_principles(topic, context=answer)
 - **Ví dụ:**
     - `FirstPrinciples("Giao tiếp hiệu quả")`: Phân tích khái niệm "giao tiếp hiệu quả" về các nguyên tắc tâm lý và xã hội học cơ bản nhất.
 
-### `compare()`: So sánh và đối chiếu hai hay nhiều chủ đề
+## `compare()`: So sánh và đối chiếu hai hay nhiều chủ đề
 
 ```python
 compare(topic1, topic2, context=answer, format="table")
@@ -492,7 +492,7 @@ compare(topic1, topic2, context=answer, format="table")
 - **Ví dụ:**
     - `Compare("SQL", "NoSQL", files, "table")`: Tạo một bảng so sánh chi tiết ưu và nhược điểm của SQL và NoSQL dựa vào nội dung file.
 
-### `five_whys()`: Tìm ra nguyên nhân gốc rễ của một vấn đề bằng cách hỏi "Tại sao?" 5 lần
+## `five_whys()`: Tìm ra nguyên nhân gốc rễ của một vấn đề bằng cách hỏi "Tại sao?" 5 lần
 
 ```python
 five_whys(problem, context=answer)
@@ -505,7 +505,7 @@ five_whys(problem, context=answer)
 - **Ví dụ:**
     - `five_whys("Dự án phần mềm bị trễ deadline", files)`: Tìm nguyên nhân gốc rễ thực sự khiến dự án bị trễ dựa trên các báo cáo trong file.
 
-### `devils_advocate()`: Đóng vai người phản biện để tấn công và tìm lỗ hổng trong một lập luận
+## `devils_advocate()`: Đóng vai người phản biện để tấn công và tìm lỗ hổng trong một lập luận
 
 ```python
 devils_advocate(argument, context="")
@@ -519,7 +519,7 @@ devils_advocate(argument, context="")
 - **Ví dụ:**
     - `devils_advocate(argument="Mọi công ty nên cho phép làm việc từ xa hoàn toàn để tăng năng suất.")`: AI sẽ đưa ra các lập luận phản bác như "Làm vậy sẽ ảnh hưởng đến văn hóa công ty, sự sáng tạo ngẫu nhiên và việc đào tạo nhân viên mới thì sao?".
 
-### `thought_experiment()`: Khám phá hệ quả của một kịch bản giả tưởng
+## `thought_experiment()`: Khám phá hệ quả của một kịch bản giả tưởng
 
 ```python
 thought_experiment(scenario, fields_to_explore)
@@ -533,7 +533,7 @@ thought_experiment(scenario, fields_to_explore)
 - **Ví dụ:**
     - `thought_experiment(scenario="What if humans no longer needed to sleep?", fields_to_explore="economics, psychology, urban planning")`.
 
-### `premortem_analysis()`: Tưởng tượng một dự án, công việc, dự định đã thất bại để tìm ra các rủi ro tiềm ẩn
+## `premortem_analysis()`: Tưởng tượng một dự án, công việc, dự định đã thất bại để tìm ra các rủi ro tiềm ẩn
 
 ```python
 premortem_analysis(project_description, context="")
@@ -547,11 +547,11 @@ premortem_analysis(project_description, context="")
 - **Ví dụ:**
     - `premortem_analysis(project_description="Launching a new mobile app for language learning")`: AI sẽ liệt kê các lý do "thất bại" như: "Giao diện người dùng quá phức tạp", "Mô hình kinh doanh không bền vững", "Marketing sai đối tượng"...
 
-## Nhóm 6: Ứng dụng Thực tế và Giải quyết Vấn đề
+# Nhóm 6: Ứng dụng Thực tế và Giải quyết Vấn đề
 
 Nhóm này kết nối lý thuyết với thực tiễn, giúp người học áp dụng kiến thức vào các tình huống cụ thể để giải quyết vấn đề.
 
-### `examples()`: Cung cấp các ví dụ thực tế về chủ đề nào đó
+## `examples()`: Cung cấp các ví dụ thực tế về chủ đề nào đó
 
 ```python
 examples(topic, quantity=3, format="real_world_scenario", level="intermediate", context=answer)
@@ -581,7 +581,7 @@ Việc sử dụng hàm này giúp bạn không chỉ "biết" một định ngh
     - `examples("Newton's Third Law", format="analogy", level="beginner")`: Cung cấp 3 phép so sánh đơn giản, dễ hiểu cho người mới bắt đầu về Định luật 3 của Newton.
     - `examples("Lạm phát", format="data")`: Tạo một bảng dữ liệu đơn giản để minh họa về khái niệm lạm phát qua các năm.
 
-### `real_world()`: Cung cấp các ví dụ về ứng dụng của một chủ đề trong thế giới thực
+## `real_world()`: Cung cấp các ví dụ về ứng dụng của một chủ đề trong thế giới thực
 
 ```python
 real_world(topic, context=answer, industry="đa ngành")
@@ -595,7 +595,7 @@ real_world(topic, context=answer, industry="đa ngành")
 - **Ví dụ:**
     - `real_world("Trí tuệ nhân tạo", "", "y tế")`: Nêu các ví dụ thực tế về ứng dụng của AI trong ngành y tế.
 
-### `create_case_study()`: Tạo ra các tình huống nghiên cứu (case study) để phân tích
+## `create_case_study()`: Tạo ra các tình huống nghiên cứu (case study) để phân tích
 
 ```python
 create_case_study(field, topic, complexity="detailed", questions_quantity=5)
@@ -611,7 +611,7 @@ create_case_study(field, topic, complexity="detailed", questions_quantity=5)
 - **Ví dụ:**
     - `create_case_study(field="business", topic="A tech startup facing a giant competitor", complexity="detailed")`: Tạo ra một case study chi tiết về một startup, bao gồm tình hình tài chính, sản phẩm, thị trường và các câu hỏi như "Bạn sẽ làm gì để cạnh tranh?", "Đâu là rủi ro lớn nhất?".
 
-### `role_play_scenario()`: Đặt người học vào một kịch bản đóng vai để rèn luyện kỹ năng mềm
+## `role_play_scenario()`: Đặt người học vào một kịch bản đóng vai để rèn luyện kỹ năng mềm
 
 ```python
 role_play_scenario(scenario, my_role, your_role, objective)
@@ -627,7 +627,7 @@ role_play_scenario(scenario, my_role, your_role, objective)
 - **Ví dụ:**
     - `role_play_scenario(scenario="A salary negotiation", my_role="Employee with 3 years experience", your_role="Hiring Manager", objective="Negotiate a 15% salary increase")`.
 
-### `generate_project_proposal()`: Hướng dẫn cách biến một ý tưởng thành một đề xuất dự án hoàn chỉnh
+## `generate_project_proposal()`: Hướng dẫn cách biến một ý tưởng thành một đề xuất dự án hoàn chỉnh
 
 ```python
 generate_project_proposal(idea, target_audience, structure="standard")
@@ -642,7 +642,7 @@ generate_project_proposal(idea, target_audience, structure="standard")
 - **Ví dụ:**
     - `generate_project_proposal(idea="An app that connects local farmers with consumers", target_audience="investors")`: AI sẽ tạo ra một dàn ý bao gồm các mục như "Problem Statement", "Proposed Solution", "Target Market", "Business Model", "Team"...
 
-### `heuristic_evaluation()`: Đánh giá một đối tượng (VD: website) dựa trên các nguyên tắc chuẩn
+## `heuristic_evaluation()`: Đánh giá một đối tượng (VD: website) dựa trên các nguyên tắc chuẩn
 
 ```python
 heuristic_evaluation(item_to_evaluate, heuristics_set, context=files)
@@ -657,7 +657,7 @@ heuristic_evaluation(item_to_evaluate, heuristics_set, context=files)
 - **Ví dụ:**
     - `heuristic_evaluation(item_to_evaluate="the user registration page", heuristics_set="Nielsen's 10 Usability Heuristics", context=files)`.
 
-### `reverse_engineer()`: Phân tích ngược một sản phẩm để hiểu cách nó được tạo ra
+## `reverse_engineer()`: Phân tích ngược một sản phẩm để hiểu cách nó được tạo ra
 
 ```python
 reverse_engineer(outcome, field, components=5)
@@ -672,11 +672,11 @@ reverse_engineer(outcome, field, components=5)
 - **Ví dụ:**
     - `reverse_engineer(outcome="A viral marketing video for a new drink", field="marketing")`: AI sẽ phác thảo các bước có thể như: "1. Nghiên cứu đối tượng mục tiêu. 2. Sáng tạo ý tưởng cốt lõi gây cảm xúc mạnh...".
 
-## Nhóm 7: Hỗ trợ Lập trình và Kỹ thuật
+# Nhóm 7: Hỗ trợ Lập trình và Kỹ thuật
 
 Nhóm này được thiết kế đặc biệt cho việc học các chủ đề kỹ thuật và lập trình, cung cấp các công cụ tương tác và thực hành.
 
-### `explain_code()`: Giải thích chức năng của một đoạn mã
+## `explain_code()`: Giải thích chức năng của một đoạn mã
 
 ```python
 explain_code(context=files, language="", detail_level="line-by-line")
@@ -691,7 +691,7 @@ explain_code(context=files, language="", detail_level="line-by-line")
 - **Ví dụ:**
     - `explain_code(files, "Python", "overview")`: Giải thích tổng quan về chức năng của đoạn code Python trong file đính kèm.
 
-### `analyze_error()`: Phân tích thông báo lỗi và đề xuất cách sửa
+## `analyze_error()`: Phân tích thông báo lỗi và đề xuất cách sửa
 
 ```python
  analyze_error(context=files)
@@ -704,7 +704,7 @@ explain_code(context=files, language="", detail_level="line-by-line")
 - **Ví dụ:**
     - `analyze_error(files)`: Phân tích file log lỗi và đoạn code liên quan để tìm ra nguyên nhân và cách sửa lỗi.
 
-### `illustrative_code()`: Viết code để mô phỏng và giải thích một khái niệm trừu tượng
+## `illustrative_code()`: Viết code để mô phỏng và giải thích một khái niệm trừu tượng
 
 ```python
 illustrative_code(concept, language="Python", style="simulation")
@@ -719,7 +719,7 @@ illustrative_code(concept, language="Python", style="simulation")
 - **Ví dụ:**
     - `illustrative_code(concept="Dijkstra's Algorithm", language="Python", style="step-by-step")`: Tạo một chương trình Python không chỉ tìm đường đi ngắn nhất mà còn in ra trạng thái của các node ở mỗi bước lặp để giải thích thuật toán.
 
-### `create_colab_tutorial()`: Tạo bài hướng dẫn trên Google Colab kèm bài tập và test case
+## `create_colab_tutorial()`: Tạo bài hướng dẫn trên Google Colab kèm bài tập và test case
 
 ```python
 create_colab_tutorial(topic, libraries, exercises="todo_with_tests")
@@ -734,7 +734,7 @@ create_colab_tutorial(topic, libraries, exercises="todo_with_tests")
 - **Ví dụ:**
     - `create_colab_tutorial(topic="Introduction to TensorFlow", libraries="tensorflow, numpy", exercises="todo_with_tests")`: Tạo ra một notebook hướng dẫn về TensorFlow, có phần để trống yêu cầu người học xây dựng một mô hình đơn giản và có code để kiểm tra xem mô hình đó có chạy đúng không.
 
-### `refactor_coach()`: Đề xuất cách cải thiện và tái cấu trúc một đoạn mã
+## `refactor_coach()`: Đề xuất cách cải thiện và tái cấu trúc một đoạn mã
 
 ```python
 refactor_coach(context=files, language, objective="readability")
@@ -749,7 +749,7 @@ refactor_coach(context=files, language, objective="readability")
 - **Ví dụ:**
     - `refactor_coach(context=files, language="Python", objective="performance")`: AI sẽ đề xuất các thay đổi trong code Python để nó chạy nhanh hơn.
 
-### `tutorial()`: Tạo bài hướng dẫn thực hiện từng bước (step-by-step)
+## `tutorial()`: Tạo bài hướng dẫn thực hiện từng bước (step-by-step)
 
 ```python
  tutorial(topic, context=answer, target_audience="người mới bắt đầu", steps=7)
@@ -765,11 +765,11 @@ refactor_coach(context=files, language, objective="readability")
 - **Ví dụ:**
     - `Tutorial("Cách dùng hàm VLOOKUP trong Excel", files, "nhân viên văn phòng", 5)`: Tạo một bài hướng dẫn 5 bước về cách dùng hàm VLOOKUP cho nhân viên văn phòng, dựa trên file dữ liệu ví dụ.
 
-## Nhóm 8: Phát triển Kỹ năng Học tập Nâng cao
+# Nhóm 8: Phát triển Kỹ năng Học tập Nâng cao
 
 Nhóm này cung cấp các công cụ để người học "học cách học", cải thiện chính phương pháp tư duy và ghi nhớ của mình.
 
-### `elaborate()`: Diễn giải, mở rộng kiến thức và tạo các liên kết sâu hơn
+## `elaborate()`: Diễn giải, mở rộng kiến thức và tạo các liên kết sâu hơn
 
 ```python
 elaborate(topic, context=answer, connections_to="ví dụ thực tế")
@@ -784,7 +784,7 @@ elaborate(topic, context=answer, connections_to="ví dụ thực tế")
 - **Ví dụ:**
     - `elaborate("Thuyết tương đối", "", "lịch sử hình thành")`: Diễn giải thuyết tương đối và kết nối nó với bối cảnh lịch sử và khoa học khi nó ra đời.
 
-### `metacognitive_prompt()`: Đưa ra câu hỏi giúp bạn suy nghĩ về chính quá trình tư duy của mình
+## `metacognitive_prompt()`: Đưa ra câu hỏi giúp bạn suy nghĩ về chính quá trình tư duy của mình
 
 ```python
 metacognitive_prompt(topic, my_understanding)
@@ -798,7 +798,7 @@ metacognitive_prompt(topic, my_understanding)
 - **Ví dụ:**
     - `metacognitive_prompt(topic="Calculus", my_understanding="I understand derivatives but I'm stuck on integrals.")`: AI có thể hỏi: "Bạn nghĩ mối liên hệ giữa đạo hàm và tích phân là gì? Bạn đã thử hình dung tích phân như một diện tích chưa? Câu hỏi nào bạn nên tự hỏi mình ngay bây giờ?".
 
-### `memory_palace_builder()`: Hướng dẫn xây dựng "cung điện ký ức" để ghi nhớ thông tin
+## `memory_palace_builder()`: Hướng dẫn xây dựng "cung điện ký ức" để ghi nhớ thông tin
 
 ```python
  memory_palace_builder(items_to_remember, location, quantity=5)
