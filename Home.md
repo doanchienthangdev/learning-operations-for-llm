@@ -9,7 +9,7 @@ Mỗi "nút bấm" là một **câu lệnh (operation)** được thiết kế �
 * **Cần hệ thống hóa kiến thức?** Lệnh `mindmap()` sẽ vẽ ra một sơ đồ tư duy trực quan.
 * **Muốn được dạy và kiểm tra bài?** Lệnh `tutor_mode()` sẽ biến AI thành một gia sư kiên nhẫn, hỏi bạn các câu hỏi từ dễ đến khó để củng cố kiến thức.
 
-Về bản chất, "Learning Operations for LLM" là một bộ công cụ gồm các lệnh được định nghĩa sẵn, giúp bạn chuyển đổi từ việc trò chuyện thụ động sang chủ động điều khiển AI, buộc nó phải xử lý và trình bày thông tin theo đúng phương pháp học tập mà bạn mong muốn. Và quan trọng nhất: bạn có thể "lập trình" để LLM trả lời theo ý muốn của bạn. Điều này giúp quá trình học trở nên có cấu trúc, hiệu quả và cá nhân hóa hơn rất nhiều.
+Về bản chất, "Learning Operations for LLM" là một bộ công cụ gồm các lệnh được định nghĩa sẵn, giúp bạn chuyển đổi từ việc trò chuyện thụ động sang chủ động điều khiển AI, buộc nó phải xử lý và trình bày thông tin theo đúng phương pháp học tập mà bạn mong muốn. Và quan trọng nhất: bạn có thể "viết chương trình" để LLM trả lời theo ý muốn của bạn. Điều này giúp quá trình học trở nên có cấu trúc, hiệu quả và cá nhân hóa hơn rất nhiều.
 
 # Nhóm 1: Tóm tắt và Cô đọng Kiến thức
 
