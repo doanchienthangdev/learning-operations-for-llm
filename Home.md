@@ -1,9 +1,5 @@
 # Learning with AI API
 
-Favorite: No
-Archived: No
-Area/Resource: AIO-2025 (https://www.notion.so/AIO-2025-209302d8792c80d88c04e15200c25104?pvs=21)
-
 # Nhóm 1: Tóm tắt và Cô đọng Kiến thức
 
 Nhóm này tập trung vào việc rút gọn thông tin, chắt lọc những ý quan trọng nhất từ một nguồn nội dung lớn.
