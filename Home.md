@@ -1,5 +1,16 @@
 # Learning with AI API
 
+Hãy tưởng tượng bạn đang nói chuyện với một trợ lý AI (LLM). Thay vì chỉ đặt những câu hỏi chung chung và nhận về những câu trả lời dài, "Learning Operations" cung cấp cho bạn một "bảng điều khiển chuyên dụng" với các nút bấm cụ thể để ra lệnh cho AI thực hiện các nhiệm vụ học tập chính xác theo ý bạn.
+
+Mỗi "nút bấm" là một **câu lệnh (operation)** được thiết kế để biến AI thành một công cụ học tập mạnh mẽ và đa năng. Ví dụ:
+
+* **Muốn tóm tắt nhanh một tài liệu dài?** Bạn dùng lệnh `zip()` để nén kiến thức lại trong đúng số câu bạn yêu cầu.
+* **Thấy một khái niệm quá khó hiểu?** Lệnh `feynman()` sẽ bắt AI giải thích nó bằng ngôn ngữ đơn giản như thể bạn đang là học sinh lớp 5.
+* **Cần hệ thống hóa kiến thức?** Lệnh `mindmap()` sẽ vẽ ra một sơ đồ tư duy trực quan.
+* **Muốn được dạy và kiểm tra bài?** Lệnh `tutor_mode()` sẽ biến AI thành một gia sư kiên nhẫn, hỏi bạn các câu hỏi từ dễ đến khó để củng cố kiến thức.
+
+Về bản chất, "Learning Operations for LLM" là một bộ công cụ gồm các lệnh được định nghĩa sẵn, giúp bạn chuyển đổi từ việc trò chuyện thụ động sang chủ động điều khiển AI, buộc nó phải xử lý và trình bày thông tin theo đúng phương pháp học tập mà bạn mong muốn. Điều này giúp quá trình học trở nên có cấu trúc, hiệu quả và cá nhân hóa hơn rất nhiều.
+
 # Nhóm 1: Tóm tắt và Cô đọng Kiến thức
 
 Nhóm này tập trung vào việc rút gọn thông tin, chắt lọc những ý quan trọng nhất từ một nguồn nội dung lớn.
